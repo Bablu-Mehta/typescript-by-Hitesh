@@ -12,3 +12,8 @@ function provideId(id) {
     }
     return id.toLowerCase();
 }
+function isAdminAccount(account) {
+    if ("isAdmin" in account) {
+        return account.isAdmin;
+    }
+}
